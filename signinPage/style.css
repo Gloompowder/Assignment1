@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+body :focus{
+    outline:0;
+}
+
+.header{
+    font-weight:500;
+    font-size: larger;
+}
+
+.signup-div{
+    margin:auto;
+    width: 55%;
+}
+
+.names, .details, .password, .terms-area, .rs-buttons{
+    margin: auto;
+    width: 100%;
+    display:flex;
+}
+
+.names input, .details input, .password input, .terms-area input, .rs-buttons input{
+    width: 100%;
+}
+
+
+.details {
+    display:flex;
+    flex:column;
+}
+
+
+input[type=text], input[type=password]{
+    padding: .75rem 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(193, 193, 193);
+    margin: 1rem;
+}
+
+input[type=text] :hover, input[type=text]:active, input[type = text]:focus,input[type=password] :hover, input[type=password]:active, input[type = password]:focus{
+    box-shadow: 3px 3px 13px rgb(164, 220, 255 / 0.2);
+    filter: drop-shadow(0 0 0.75rem rgb(164, 220, 255));
+    border: 1px solid rgb(164, 220, 255);
+}
+
+input[type=text] ::placeholder input[type=password] ::placeholder{
+    font-size: larger;
+    font-weight: 400;
+}
+
+input[type=button]{
+    border:1px solid white;
+    padding: .75rem 1rem;
+    border-radius: 5px;
+    color:white;
+    margin: 1rem;
+    width: 100%;
+}
+
+.register-button{
+    background-color: #2596be;
+}
+.sign-in-button{
+    background-color: #5db85b
+    ;
+}
+.register-inline{
+    background-color: #2596be;
+    border-radius: 5px;
+    padding: .5em;
+    font-size: smaller;
+    font-weight: bold;
+    display: inline-block;
+    color:white;
+}
+
+.agreement, .agreement *{
+    display:inline-block;
+}
+
+.terms-area h4{
+    display:inline-block;
+    font-size: smaller;
+}
+
+.terms-area{
+    display: block;
+    font-size: small;
+    font-weight: 500;
+}
+
+.names, .details, .password, .terms-area, .rs-buttons{
+    margin:auto; 
+    display:flex;
+}
+.header{
+    margin: 2rem;
+    font-size: x-large;
+    text-align: center;
+}
+.terms-and-conditions:visited, .terms-and-conditions:active, .terms-and-conditions:hover, .terms-and-conditions:link{
+    text-decoration: none; 
+    color:#2596be;
+}
+
+.display input{
+    display:block;
+    width: 100%;
+}
+
+details{
+    flex-direction: column;
+}
+input[type=checkbox]{
+    width:auto;
+}
+.rs-buttons{
+    gap: 1rem;
+}
+input[type=button]{
+    margin: 0;
+}
+.checkbox{
+    width: 175px;
+    margin: auto 0;
+}
+
+.checkbox label{
+    font-weight: bold;
+}
+
+.agreement p{
+    margin: 0;
+}
