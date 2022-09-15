@@ -24,22 +24,20 @@ body :focus{
     width: 55%;
 }
 
-.names, .details, .password, .terms-area, .rs-buttons{
+.names, .password, .terms-area, .rs-buttons{
     margin: auto;
     width: 100%;
     display:flex;
 }
 
-.names input, .details input, .password input, .terms-area input, .rs-buttons input{
+.names input, .password input, .terms-area input, .rs-buttons input{
     width: 100%;
 }
 
-
-.details {
+.details, .details input{
     display:flex;
-    flex:column;
+    flex-direction: column;
 }
-
 
 input[type=text], input[type=password]{
     padding: .75rem 1rem;
@@ -142,4 +140,19 @@ input[type=button]{
 
 .agreement p{
     margin: 0;
+}
+
+
+@media screen and (max-width: 640px) {
+    .rs-buttons{
+        gap:0;
+    }
+    .rs-buttons{
+        display:block;
+    }
+    .names, .names input, .password, .password input{
+        display:flex;
+        flex-direction: column;
+        width: auto;
+    }
 }
